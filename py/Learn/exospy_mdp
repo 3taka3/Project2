@@ -1,0 +1,18 @@
+reponse1 = "votre mot de passe est trop court"
+reponse2 = "votre doit comporter au moins 1 caractère"
+reponse3 = "votre mot de passe ne comporte que des nombres"
+reponse4 = "Inscription validée"
+
+mdp = input("Entrez un mot de passe (min 8 caractères, composé d'au moins 1 lettre) : ")
+mdplist = "-".join(mdp)
+
+print(mdplist) 
+
+if len(mdplist) == 0 : 
+    print(reponse2.capitalize())
+elif len(mdplist) < 8 : 
+    print(reponse1.capitalize())
+elif mdplist.isdigit : 
+    print(reponse3.capitalize())
+else : print(reponse4) 
+

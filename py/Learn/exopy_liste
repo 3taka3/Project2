@@ -1,0 +1,64 @@
+listea = ["Margot",
+         "Mathilde",
+         "Anne",
+         "Patrice",
+         "Thibault",
+         "Nicolas"]
+
+listeb = "chausettes, chemises, t-shirts, culottes, jeans"
+
+#slices
+print(listea[0])
+print(listea[-1])
+print(listea[1:5])
+print(listea[:])
+print(listea[::2])
+print(listea[1::2])
+
+#donne l'indice
+print(listea.index("Margot"))
+#donne l'occurence
+print(listea.count("Margot"))
+
+#Trie de manière alphabétique 
+listea2 = sorted(listea)
+print(listea) 
+print(listea2)
+
+
+#Inverse le sens 
+listea2.reverse()
+print(listea2) 
+
+#Supprimer l'element et l'afficher
+element_deleted = listea2.pop(0)
+print(listea2)
+print(element_deleted)
+
+all_deleted = listea2.clear()
+print(all_deleted )
+print(listea2)
+
+#joindre élement de la liste par un retour à la ligne
+listeajointe = " \n".join(listea)
+
+print(listeajointe)
+
+
+#chaine de caractère transformée en liste fragmentée 
+listebfragmenté = listeb.split(", ")
+listebfragmenté.sort()
+print (listebfragmenté)
+
+#opérateur d'appartenance
+print("chausettes" in listebfragmenté)
+
+if "chemises" in listebfragmenté : 
+    listebfragmenté.remove("chemises")
+print (listebfragmenté)
+
+#liste imbriqué 
+listeimb = ["Python", ["Java", "C++", ["C"]], ["Ruby"]]
+print(listeimb[1][1][0])
+print(listeimb[2][0][0:2])
+print(len(listebfragmenté))
