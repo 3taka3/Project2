@@ -9,5 +9,6 @@ if [[ -n $(git status -s) ]]; then
 
 # Commit des modifications avec horodatage
     git commit -m "Auto commit $(date +'%Y-%m-%d %H:%M:%S')"
+    git push 
 
 fi 
